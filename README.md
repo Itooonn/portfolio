@@ -37,9 +37,9 @@ Follow these steps to get a local copy of the project up and running on your mac
     cd your-repo-name
     ```
 
-3. **Install dependencies**
+3. **Install composer**
     ```
-    npm install
+    composer install
     ```
 
 4. **Run the development server**
