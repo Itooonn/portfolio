@@ -67,6 +67,7 @@ $RECYCLE.BIN/
 
 # Local Tooling & AI Agent Workspaces
 .impeccable/
+PRODUCT.md
 
 # Server / VM Configs
 Homestead.json
