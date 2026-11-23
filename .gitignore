@@ -1,24 +1,73 @@
+# Logs
 *.log
-.DS_Store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment & Secrets (Never commit credentials)
 .env
 .env.backup
-.env.production
-.phpactor.json
-.phpunit.result.cache
-/.fleet
-/.idea
-/.nova
-/.phpunit.cache
-/.vscode
-/.zed
+.env.*.php
+.env.*
+!.env.example
+!.env.vault
 /auth.json
+
+# Dependencies
 /node_modules
+/vendor
+
+# Compiled Assets & Storage
 /public/build
 /public/hot
 /public/storage
 /storage/*.key
 /storage/pail
-/vendor
+
+# Databases
+*.sqlite
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+
+# Caches & Test Results
+.phpunit.result.cache
+/.phpunit.cache
+.php-cs-fixer.cache
+.phpactor.json
+.pest/
+
+# Docker Local Overrides
+docker-compose.override.yml
+docker-compose.local.yml
+
+# IDEs & Text Editors
+/.fleet
+/.idea
+/.nova
+/.vscode
+/.zed
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# OS Generated Files
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Local Tooling & AI Agent Workspaces
+.impeccable/
+
+# Server / VM Configs
 Homestead.json
 Homestead.yaml
-Thumbs.db
