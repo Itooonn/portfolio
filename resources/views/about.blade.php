@@ -5,83 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Portfolio | About</title>
-
-    <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-        }
-
-        body {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .unicolor {
-            background-color: #6a1b9a; 
-            color: #ffffff;
-        }
-
-        .main-content {
-            flex: 1;
-            display: flex;
-            align-items: center; 
-            justify-content: center;
-            padding: 2rem 0; 
-        }
-
-        .text-color {
-            color: #6a1b9a;
-        }
-
-
-        .nav-link-custom {
-            text-decoration: none;
-            transition: opacity 0.3s;
-        }
-
-        .nav-link-custom:hover {
-            opacity: 0.7;
-        }
-    </style>
+    @include('partials.typography')
 </head>
-
 <body class="bg-light">
     <header>
-        <nav class="p-4 unicolor text-center">
-            <a class="text-white mx-3 text-decoration-none nav-link-custom" href="{{ route('home') }}">Home</a>
-            <a class="text-white mx-3 text-decoration-none nav-link-custom" href="{{ route('projects') }}">Projects</a>
-            <a class="text-white mx-3 text-decoration-none nav-link-custom" href="{{ route('about') }}">About</a>
+        <nav class="site-nav unicolor" aria-label="Primary navigation">
+            <a class="nav-link-custom" href="{{ route('home') }}">Home</a>
+            <a class="nav-link-custom" href="{{ route('projects') }}">Projects</a>
+            <a class="nav-link-custom" href="{{ route('about') }}">About</a>
         </nav>
     </header>
-
     <main class="main-content">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 text-start px-4">
-                    <h2 class="fw-bold text-color">About Me</h2>
-                    <p class="lead">I'm a student learning about computer technology and web development aiming to be able to help my community with computer technical expertise
-                        and coding.</p>
-                    
-                    <h3 class="mt-4 text-color">My Goals</h3>
-                    <ul class="text-muted">
+            <div class="row align-items-center g-5">
+                <div class="col-md-6 px-4">
+                    <h1 class="section-title">About Me</h1>
+                    <p class="about-copy">I’m a student learning computer technology and web development. I aim to use technical expertise and coding to help my community.</p>
+                    <h2 class="subsection-title">My Goals</h2>
+                    <ul class="goals-list ps-4">
                         <li>Build a system that my school and community can use.</li>
-                        <li>Learn and be proficient in at least one of the programming languages I learned.</li>
-                        <li>Learn more about general computer knowlegde such as networking, operating systems, and databases.</li>
+                        <li>Become proficient in at least one programming language I have learned.</li>
+                        <li>Learn more about computer knowledge, including networking, operating systems, and databases.</li>
                         <li>Make my own game.</li>
-                    </ul>
-
-                    <h3 class="mt-4 text-color">My Likes</h3>
-                    <ul class="text-muted">
-                        <li>Cats</li>
-                        <li>Stories</li>
-                        <li>Music</li>
                     </ul>
                 </div>
                 <div class="col-md-6 text-center">
-                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=facearea&w=400&h=400&facepad=2" 
-                         alt="Profile" 
-                         class="img-fluid rounded shadow-lg" 
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=facearea&w=400&h=400&facepad=2"
+                         alt="Profile"
+                         class="img-fluid rounded shadow-lg"
                          style="max-width: 80%;">
                 </div>
             </div>
