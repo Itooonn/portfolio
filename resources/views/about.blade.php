@@ -8,13 +8,7 @@
     @include('partials.typography')
 </head>
 <body class="bg-light">
-    <header>
-        <nav class="site-nav unicolor" aria-label="Primary navigation">
-            <a class="nav-link-custom" href="{{ route('home') }}">Home</a>
-            <a class="nav-link-custom" href="{{ route('projects') }}">Projects</a>
-            <a class="nav-link-custom" href="{{ route('about') }}">About</a>
-        </nav>
-    </header>
+    @include('partials.nav')
     <main class="main-content">
         <div class="container">
             <div class="row align-items-center g-5">
